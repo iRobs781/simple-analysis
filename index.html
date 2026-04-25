@@ -3,101 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simple Analysis — Accountancy & Payroll</title>
-  <meta name="description" content="Bookkeeping, management accounts and payroll for sole traders and SMEs. Based in the UK." />
+  <title>Simple Analysis — Coming Soon</title>
+  <meta name="description" content="Simple Analysis — Accountancy & Payroll for SMEs. Coming soon." />
   <link rel="icon" type="image/png" href="images/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #1a2e6e;
+      --teal: #1e7a6e;
+      --border: #e2e2e2;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #fff;
+      color: #1a1a2e;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .logo {
+      height: 80px;
+      width: auto;
+      margin: 0 auto 48px;
+      display: block;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 40px;
+      line-height: 1.1;
+      letter-spacing: -0.8px;
+      color: var(--navy);
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: var(--border);
+      margin: 0 auto 40px;
+    }
+
+    .contact-label {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    .contact-link {
+      font-size: 15px;
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .contact-link:hover {
+      color: var(--teal);
+      border-color: var(--teal);
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 24px;
+      font-size: 12px;
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <header class="nav" id="top">
-    <a href="#top" class="nav-logo">
-      <img src="images/logo.png" alt="Simple Analysis" />
-    </a>
-    <nav>
-      <ul class="nav-links" id="nav-links"></ul>
-    </nav>
-    <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-  </header>
-
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobile-menu">
-    <ul id="mobile-links"></ul>
+  <div class="container">
+    <img class="logo" src="images/logo.png" alt="Simple Analysis" />
+    <p class="eyebrow">Accountancy & Payroll</p>
+    <h1>Something good is coming.</h1>
+    <p>We're putting the finishing touches on our new website. In the meantime, get in touch — we'd love to hear from you.</p>
+    <div class="divider"></div>
+    <p class="contact-label">Contact us</p>
+    <a class="contact-link" href="mailto:roberto@simpleanalysis.co.uk">roberto@simpleanalysis.co.uk</a>
   </div>
 
-  <main>
+  <p class="footer">© 2026 Simple Analysis. All rights reserved.</p>
 
-    <!-- HERO -->
-    <section class="hero" id="hero">
-      <div class="hero-inner">
-        <p class="eyebrow" id="hero-eyebrow"></p>
-        <h1 id="hero-heading"></h1>
-        <p class="hero-sub" id="hero-sub"></p>
-        <div class="hero-actions">
-          <a class="btn-primary" id="hero-cta-primary" href="#contact"></a>
-          <a class="btn-secondary" id="hero-cta-secondary" href="#services"></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section" id="services">
-      <div class="section-header">
-        <p class="section-label">What we do</p>
-        <h2 class="section-title">Our services</h2>
-        <p class="section-sub">Straightforward financial support for sole traders and small to medium businesses.</p>
-      </div>
-      <div class="services-grid" id="services-grid"></div>
-    </section>
-
-    <!-- PRODUCTS -->
-    <section class="section section-alt" id="products">
-      <div class="section-header">
-        <p class="section-label">Our products</p>
-        <h2 class="section-title">Built for modern businesses</h2>
-        <p class="section-sub">Tools we've created to help businesses like yours work smarter.</p>
-      </div>
-      <div class="products-grid" id="products-grid"></div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="section" id="testimonials">
-      <div class="section-header">
-        <p class="section-label">Testimonials</p>
-        <h2 class="section-title">What our clients say</h2>
-        <p class="section-sub">Trusted by sole traders and SMEs across the UK.</p>
-      </div>
-      <div class="testimonials-grid" id="testimonials-grid"></div>
-      <p class="testimonials-placeholder" id="testimonials-placeholder" style="display:none;">
-        Testimonials coming soon.
-      </p>
-    </section>
-
-    <!-- CONTACT CTA -->
-    <section class="cta-section" id="contact">
-      <h2>Ready to simplify your finances?</h2>
-      <p>Get in touch for a free, no-obligation consultation.</p>
-      <a class="btn-white" id="cta-email" href="#">Book a free consultation</a>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <span id="footer-copy"></span>
-    <div class="footer-links">
-      <a href="mailto:roberto@simpleanalysis.co.uk">Contact</a>
-      <a href="#top">Back to top</a>
-    </div>
-  </footer>
-
-  <script src="content.js"></script>
-  <script src="app.js"></script>
 </body>
 </html>
